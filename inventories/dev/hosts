@@ -2,11 +2,12 @@
 10.21.13.177
 
 [Windows:vars]
-ansible_user=Administrator
+ansible_user=ansible
 ansible_password=5404@ch
 ansible_connection=winrm
 ansible_port=5985
 ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
+
 
 
