@@ -28,8 +28,7 @@ jobs:
         
       - name: install ansible
         run: |
-          sudo dnf update -y
-          sudo dnf install python3-pip -y
+          python3 -m pip install --user --upgrade pip
           python3 -m pip install --user ansible
           echo "$HOME/.local/bin" >>$GITHUB_PATH
 
