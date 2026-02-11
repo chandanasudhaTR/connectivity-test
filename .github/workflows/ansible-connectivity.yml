@@ -28,7 +28,7 @@ jobs:
         
       - name: install ansible
         run: |
-          sudo dnf update-y
+          sudo dnf update -y
           sudo dnf install ansible -y
 
     
