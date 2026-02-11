@@ -4,6 +4,7 @@ name: test ansible connectivity
 
 # Controls when the workflow will run
 on:
+
  
   push:
     branches: [ "main" ]
