@@ -28,9 +28,8 @@ jobs:
         
       - name: install ansible
         run: |
-          sudo yum update -y
-          sudo amazon-linux-extras enable ansible2
-          sudo yum install ansible -y
+          sudo dnf update-y
+          sudo dnf install ansible -y
 
       # Runs a set of commands using the runners shell
       - name: install WinRm support 
