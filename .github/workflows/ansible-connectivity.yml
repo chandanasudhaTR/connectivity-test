@@ -30,14 +30,13 @@ jobs:
         run: |
           sudo dnf update -y
           sudo dnf install python3-pip -y
-          sudo pip3 install ansible --ignore-installed --upgrade
-          
-          
+          python3 -m pip install --user ansible
+          echo "$HOME/.local/bin" >>$GITHUB_PATH
 
     
       - name: install WinRm support 
         run: |
-          sudo pip3 install pywinrm
+          python3 -m pip install --user pywinrm
       - name: Run ansible playbook
         run: |
           ansible-playbook playbooks/main.yml
