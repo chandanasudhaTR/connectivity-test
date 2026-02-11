@@ -29,7 +29,9 @@ jobs:
       - name: install ansible
         run: |
           sudo dnf update -y
-          sudo dnf install ansible -y
+          sudo dnf install python3-pip -y
+          sudo pip3 install ansible
+          
 
     
       - name: install WinRm support 
