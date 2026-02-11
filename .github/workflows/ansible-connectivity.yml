@@ -30,8 +30,8 @@ jobs:
         run: |
           sudo dnf update -y
           sudo dnf install python3-pip -y
-          sudo pip3 uninstall ansible -y ||true
-          sudo pip3 install ansible --upgrade
+          sudo pip3 install ansible --ignore-installed --upgrade
+          
           
 
     
