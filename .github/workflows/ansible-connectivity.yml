@@ -40,4 +40,4 @@ jobs:
           sudo pip3 install pywinrm
       - name: Run ansible playbook
         run: |
-          python3 -m ansible playbooks/main.yml
+          ansible-playbook playbooks/main.yml
