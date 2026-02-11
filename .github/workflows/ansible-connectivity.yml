@@ -34,7 +34,7 @@ jobs:
     
       - name: install WinRm support 
         run: |
-          pip3 install pywinrm
+          sudo pip3 install pywinrm
       - name: Run ansible playbook
         run: |
           ansible-playbook playbooks/main.yml
