@@ -31,7 +31,7 @@ jobs:
           sudo dnf update-y
           sudo dnf install ansible -y
 
-      # Runs a set of commands using the runners shell
+    
       - name: install WinRm support 
         run: |
           pip3 install pywinrm
