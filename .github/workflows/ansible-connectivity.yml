@@ -37,4 +37,4 @@ jobs:
       - name: Run ansible playbook
         run: |
           source ansible-env/bin/activate
-          ansible-playbook playbooks/main.yml
+          ansible-playbook -i inventories/hosts playbooks/main.yml
