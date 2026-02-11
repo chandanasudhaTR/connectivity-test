@@ -28,14 +28,13 @@ jobs:
         
       - name: install ansible
         run: |
-          python3 -m pip install --user --upgrade pip
-          python3 -m pip install --user ansible
-          echo "$HOME/.local/bin" >>$GITHUB_PATH
+          python3 -m venv ansible-env
+          source ansible-env/bin/activate
+          pip install --upgrade pip
+          pip install ansible pywinrm
 
-    
-      - name: install WinRm support 
-        run: |
-          python3 -m pip install --user pywinrm
+         
       - name: Run ansible playbook
         run: |
+          source ansible-env/bin/activate
           ansible-playbook playbooks/main.yml
