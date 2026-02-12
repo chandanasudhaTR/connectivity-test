@@ -1,7 +1,7 @@
-[Windows]
+[windows]
 10.21.13.177
 
-[Windows:vars]
+[windows:vars]
 ansible_user=ansible
 ansible_password= StrOngWinRM@2026
 ansible_connection=winrm
@@ -9,6 +9,7 @@ ansible_port=5985
 ansible_winrm_transport=ntlm
 ansible_winrm_schema=http
 ansible_winrm_server_cert_validation=ignore
+
 
 
 
