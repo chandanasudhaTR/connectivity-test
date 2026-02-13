@@ -2,13 +2,14 @@
 10.21.13.177
 
 [windows:vars]
-ansible_user=.\ansible
+ansible_user=EC2AMAZ-C0PRFM8\ansible
 ansible_password="StrongPass@123"
 ansible_connection=winrm
 ansible_port=5985
 ansible_winrm_transport=ntlm
 ansible_winrm_scheme=http
 ansible_winrm_server_cert_validation=ignore
+
 
 
 
