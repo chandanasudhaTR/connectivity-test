@@ -1,11 +1,9 @@
-ansible_user:chandu
-ansible_password:"9319@Chandu"
-ansible_connection:winrm
-ansible_port:5985
-ansible_winrm_transport:ntlm
-ansible_winrm_scheme:http
-ansible_winrm_server_cert_validation:ignore
-
-
+ansible_user: "chandu"
+ansible_password: "9319@Chandu"
+ansible_connection: winrm
+ansible_port: 5985
+ansible_winrm_transport: ntlm
+ansible_winrm_scheme: http
+ansible_winrm_server_cert_validation: ignore
 
 
