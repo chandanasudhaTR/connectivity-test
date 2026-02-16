@@ -27,14 +27,7 @@ jobs:
 
       
         
-      - name: install ansible
-        run: |
-          
-        
-          
-          pip install ansible pywinrm
-
-         
+    
       - name: Run ansible playbook
         run: |
           
