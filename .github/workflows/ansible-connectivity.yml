@@ -1,34 +1,24 @@
-
-
 name: test ansible connectivity
-
-
+ 
 on:
-
- 
   push:
-    branches: [ "main" ]
-  
-
- 
+    branches: ["main"]
   workflow_dispatch:
-
-
+ 
 jobs:
-  
   test-connectivity:
-    
     runs-on: self-hosted
-
-   
+ 
     steps:
-      
-      - uses: actions/checkout@v4
-
-      
-        
-    
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Show current directory
+        run: |
+          pwd
+          ls -R
+ 
       - name: Run ansible playbook
         run: |
-          
           ansible-playbook -i inventories/dev/hosts playbooks/main.yml
+ 
