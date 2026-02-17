@@ -1,5 +1,3 @@
-ansible_user: "ansibleuserc"
-ansible_password: "task2Test1"
 
 ansible_connection: winrm
 ansible_port: 5986
