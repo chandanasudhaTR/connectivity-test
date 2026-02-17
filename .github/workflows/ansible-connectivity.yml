@@ -20,5 +20,5 @@ jobs:
  
       - name: Run ansible playbook
         run: |
-          ansible-playbook -i inventories/dev/hosts playbooks/main.yml
+          ansible-playbook -i inventories/dev/hosts playbooks/main.yml \ -e "ansible-user=.\ansibleuser"\ -e "ansible_password=task2Test1"
  
