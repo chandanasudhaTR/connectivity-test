@@ -1,4 +1,5 @@
 [windows]
-10.21.1.87
+10.21.1.87 ansible_user=ansibleuserc ansible_password=N8$!!XdmRUvn7bQ3 ansible_connection=winrm ansible_port=5986 ansible_winrm_transport=ntlm ansible_winrm_server_cert_validation=ignore ansible_winrm_operation_timeout_sec=60 ansible_winrm_read_timeout_sec=120
+
 
 
