@@ -7,7 +7,13 @@
     - name: Ping Windows host
       win_ping:
       register: ping_result
+
+    - name: Create artifact folder 
+      win_file:
+       path: C\artifact1
+       state: directory
     
+
 
 
 
