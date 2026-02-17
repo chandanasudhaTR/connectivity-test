@@ -12,4 +12,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Run ansible playbook
         # run: ansible -i inventories/dev/hosts windows -m win_ping -vvv
-        run: ansible-playbook -i ansible/inventory/dev/hosts.ini ansible/playbooks/connect.yml -vvv
+        run: ansible-playbook -i inventories/dev/hosts playbooks/main.yml -vvv
