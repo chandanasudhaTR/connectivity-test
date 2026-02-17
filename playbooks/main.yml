@@ -20,6 +20,13 @@
         url_username: "{{ lookup('env','JFROG_UNAME') }}"
         url_password: "{{ lookup('env','JFROG_PASSWORD') }}"
 
+     - name: Extract artifact zip
+      win_unzip:
+        src: C:\inetpub\artifact1\app.zip
+        dest: C:\inetpub\artifact1
+        remote_src: yes
+
+
 
 
 
