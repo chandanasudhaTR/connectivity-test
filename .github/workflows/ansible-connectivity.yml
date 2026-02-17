@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+     
+ 
       - name: Run ansible playbook
-        # run: ansible -i inventories/dev/hosts windows -m win_ping -vvv
+        env:
+          JFROG_UNAME: ${{ secrets.JFROG_UNAME }}
+          JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
         run: ansible-playbook -i inventories/dev/hosts playbooks/main.yml -vvv
+ 
