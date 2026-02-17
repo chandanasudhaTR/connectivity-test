@@ -19,4 +19,4 @@ jobs:
           ls -R
  
       - name: Run ansible playbook
-        run: ansible-playbook -i inventories/dev/hosts playbooks/main.yml -e "ansible_user=ansibleuserc" -e "ansible_password=task2Test1"
+        run: ansible-playbook -i inventories/dev/hosts playbooks/main.yml
