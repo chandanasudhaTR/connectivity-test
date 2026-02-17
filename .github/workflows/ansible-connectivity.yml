@@ -1,17 +1,14 @@
 name: test ansible connectivity
- 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
- 
 jobs:
   test-connectivity:
-    runs-on: machine1
- 
+    runs-on: ansible_runner1
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
       - name: Run ansible playbook
-        run: ansible-playbook -i inventories/dev/hosts playbooks/main.yml
+        # run: ansible -i inventories/dev/hosts windows -m win_ping -vvv
+        run: ansible-playbook -i ansible/inventory/dev/hosts.ini ansible/playbooks/connect.yml -vvv
