@@ -19,7 +19,8 @@
          https://tr1.jfrog.io/artifactory/generic-local/CTT/GST/gosystemapicore/develop/2024.05.22.22.zip
         dest: C:\inetpub\artifact1\app.zip
       url_username: "{{ lookup('env','JFROG_UNAME') }}"
-        url_password: "{{ lookup('env','JFROG_PASSWORD') }}"
+      url_password: "{{ lookup('env','JFROG_PASSWORD') }}"
+
 
 
 
