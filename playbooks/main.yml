@@ -10,9 +10,10 @@
 
     - name: Create artifact folder 
       win_file:
-       path: C\artifact1
+       path: C:\inetpub\artifact1
        state: directory
     
+
 
 
 
