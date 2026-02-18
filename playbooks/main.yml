@@ -40,7 +40,12 @@
       win_iis_webapppool:
         name: artifact1-pool
         state: started
- 
+
+    - name: Remove existing IIS Website if present
+      win_iis_website:
+        name: artifact1-site
+        state: absent
+        
     - name: Create IIS Website
       win_iis_website:
         name: artifact1-site
@@ -48,6 +53,7 @@
         physical_path: C:\inetpub\artifact1
         application_pool: artifact1-pool
         port: 8080
+
 
 
 
