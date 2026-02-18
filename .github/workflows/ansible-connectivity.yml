@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   test-connectivity:
-    runs-on: linux1
+    runs-on: linx2
     
     steps:
       - name: Checkout repo
