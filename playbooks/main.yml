@@ -27,9 +27,15 @@
         dest: C:\inetpub\artifact1
         remote_src: yes
 
-
+    - name: Install IIS WebAdministration module
+       win_feature: 
+        name: Web-Server
+        state: present
+        
+  
     - name: Create IIS App pool
        win_iis_webapppool:
         name: artifact1-pool
         state: started
+
 
