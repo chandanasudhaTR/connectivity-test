@@ -41,6 +41,13 @@
         name: artifact1-pool
         state: started
  
+    - name: Create IIS Website
+      win_iis_website:
+        name: artifact1-site
+        state: started
+        physical_path: C:\inetpub\artifact1
+        application_pool: artifact1-pool
+        port: 80
 
 
 
