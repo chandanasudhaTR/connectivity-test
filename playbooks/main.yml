@@ -26,3 +26,10 @@
         src: C:\inetpub\artifact1\app.zip
         dest: C:\inetpub\artifact1
         remote_src: yes
+
+
+    - name: Create IIS App pool
+       win_iis_webapppool:
+        name: artifact1-pool
+        state: started
+
